@@ -34,13 +34,11 @@ a {
   // 3. At-Rules
   @include set-bg($primary-color);
 
-  height: 80vh;
-
   nav{
     li{
-      // color: $primary-color;
+       color: $primary-color;
     }
-    // Text color picker utility in utilities.scss
+   
     a{
       color: text-color-picker($primary-color)
     }
@@ -58,7 +56,7 @@ a {
   }
 
   a{
-    // color:$secondary-color
+     color:$secondary-color
   }
   h1{
     font-size: 40px;
@@ -81,8 +79,6 @@ a {
 
 }
 
-// This code is related to some of the aspects of SCSS we have yet to cover.
-// While you don't have to mess with it, it would be advisable to attempt to understand its functionality.
 $spaceamounts: (1,2,3,4,5);
 
 @each $space in $spaceamounts {
